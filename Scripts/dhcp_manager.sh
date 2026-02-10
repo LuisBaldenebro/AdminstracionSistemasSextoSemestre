@@ -25,7 +25,7 @@ verificar_instalacion() {
 }
 
 instalar_dhcp() {
-    echo "[INFO] Iniciando instalación de DHCP Server..."
+    echo "Iniciando instalación de DHCP Server..."
     dnf install -y dhcp-server > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "DHCP Server instalado correctamente"
